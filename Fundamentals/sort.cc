@@ -28,6 +28,11 @@ void printArray(int array[],int size){
     }
 
 }
+void printAddress(int array[],int index){
+
+    printf("%p\n",&array[index]);
+
+}
 
 int main(){
 
@@ -38,6 +43,11 @@ int main(){
     sort(array,size);
     printArray(array,size);
 
+    printAddress(array,0);
+    printAddress(array,1);
+    printAddress(array,2);
+    printAddress(array,3);
+    printAddress(array,4);
 
     return 0;
 
